@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+    <title>FixMob</title>
+    <meta name="description" content="Réparation des telephones et tablettes">	
+	<meta name="author" content="Achraf ELMALLOUKI">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="icon" href="img/favicon/favicon-32x32.png" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon/favicon-54x54.png">
+	
+	<!-- CSS
+	================================================== -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../welcomenew/css/bootstrap.min.css">
+	<!-- Template styles-->
+	<link rel="stylesheet" href="../welcomenew/css/style.css">
+	<!-- Responsive styles-->
+	<link rel="stylesheet" href="../welcomenew/css/responsive.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="../welcomenew/css/font-awesome.min.css">
+	<!-- Animation -->
+	<link rel="stylesheet" href="../welcomenew/css/animate.css">
+	<!-- Prettyphoto -->
+	<link rel="stylesheet" href="../welcomenew/css/prettyPhoto.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="../welcomenew/css/owl.carousel.css">
+	<link rel="stylesheet" href="../welcomenew/css/owl.theme.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="../welcomenew/css/flexslider.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="../welcomenew/css/cd-hero.css">
+	<!-- Style Swicther -->
+	<link id="style-switch" href="../welcomenew/css/presets/preset1.css" media="screen" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+	
+<body>
+
+	<!-- Style switcher start -->
+	<div class="style-switch-wrapper">
+		<div class="style-switch-button">
+			<i class="fa fa-sliders"></i>
+		</div>
+		<h4>Réparer votre téléphone</h4>
+		<!--<button id="preset1" class="btn btn-sm btn-primary"></button>
+		<button id="preset2" class="btn btn-sm btn-primary"></button>
+		<button id="preset3" class="btn btn-sm btn-primary"></button>
+		<button id="preset4" class="btn btn-sm btn-primary"></button>
+		<button id="preset5" class="btn btn-sm btn-primary"></button>
+		<button id="preset6" class="btn btn-sm btn-primary"></button>-->
+		<br/><br/>
+		<a class="btn btn-sm btn-primary close-styler pull-right" href="{{ url('reparation/rep')}}">Réparer</a>
+	</div>
+	<!-- Style switcher end -->
+
+	<div class="body-inner">
+	<!-- Header start -->
+	<header id="header" class="navbar-fixed-top header2" role="banner">
+		<div class="container">
+			<div class="row">
+				<!-- Logo start -->
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <div class="navbar-brand">
+					    <a href="index.html">
+					    	<img class="img-responsive" src="../welcomenew/images/logo.png" alt="logo">
+					    </a> 
+				    </div>                   
+				</div><!--/ Logo end -->
+				<nav class="collapse navbar-collapse clearfix" role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown active">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                            <li><a href="index.html">Home 1</a></li>
+		                            <li class="active"><a href="index-2.html">Home 2</a></li>
+		                            <li><a href="index-3.html">Home 3</a></li>
+		                            <li><a href="index-4.html">Home 4</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+						<li class="dropdown">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                            <li><a href="about.html">About Us</a></li>
+		                            <li><a href="service.html">Services</a></li>
+		                            <li><a href="career.html">Career</a></li>
+		                            <li><a href="testimonial.html">Testimonials</a></li>
+		                            <li><a href="faq.html">Faq</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+						<li class="dropdown">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                            <li><a href="portfolio-classic.html">Portfolio Classic</a></li>
+		                            <li><a href="portfolio-static.html">Portfolio Static</a></li>
+		                            <li><a href="portfolio-item.html">Portfolio Single</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+	                    <li class="dropdown">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                           	<li><a href="team.html">Our Team</a></li>
+		                           	<li><a href="about2.html">About Us - 2</a></li>
+		                           	<li><a href="service2.html">Services - 2</a></li>
+		                           	<li><a href="service-single.html">Services Single</a></li>
+		                           	<li><a href="pricing.html">Pricing Table</a></li>
+		                           	<li><a href="404.html">404 Page</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+	                    <li class="dropdown">
+                       		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessoires <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                           	 <li><a href="blog-rightside.html">Blog with Sidebar</a></li>
+	                            	<li><a href="blog-item.html">Blog Single</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+	                    <li class="dropdown">
+                       		<a href="{{ route('login') }}" class="dropdown-toggle" data-toggle="dropdown">Mon FixMob <i class="fa fa-angle-down"></i></a>
+                       		<div class="dropdown-menu">
+								<ul>
+		                           	 <li><a href="{{ route('login') }}">S'autentifier</a></li>
+	                            	<li><a href="{{ route('register') }}">S'identifier</a></li>
+		                        </ul>
+	                    	</div>
+	                    </li>
+            			<li><a href="contact.html">Contact</a></li>
+                    </ul>
+				</nav><!--/ Navigation end -->
+			</div><!--/ Row end -->
+		</div><!--/ Container end -->
+	</header><!--/ Header end -->
+
+	<!-- Slider start -->
+	<section id="home" class="no-padding">	
+
+    	<div id="main-slide" class="ts-flex-slider">
+
+			<div class="flexSlideshow flexslider">
+				<ul class="slides">
+					<li>
+						<div class="overlay2">
+							<img class="" src="../welcomenew/images/slider/bg22.png" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                    		<h2 class="animated2">
+	                        		Réparer votre mobile
+	                        	</h2>
+	                            <h3 class="animated3">
+	                            	Aujourd'hui, la réparation dans le FixMob, où vous voulez !! 
+	                            </h3>
+	                            <p class="animated4">
+								
+								<a style="font-family: Times New Roman" href="{{ url('reparation/rep')}}" class="slider btn btn-primary white">
+																		&nbsp;&nbsp;Demande de réparation &nbsp;&nbsp;</a></p>
+	                        </div>
+	                    </div>
+					</li>
+					<li>
+						<div class="overlay2">
+							<img class="" src="../welcomenew/images/slider/bg2.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                            <h2 class="animated4">
+	                                Garantie
+	                            </h2>
+	                            <h3 class="animated5">
+								Les réparateurs formés n'utilisent que des pièces de la plus haute qualité avec une garantie de 12 mois
+	                            </h3>		
+	                            <p class="animated6"><a style="font-family: Times New Roman" href="{{ url('reparation/rep')}}" class="slider btn btn-primary white">
+																		&nbsp;&nbsp;Demande de réparation &nbsp;&nbsp;</a></p>	     
+	                        </div>
+	                    </div>
+					</li>
+					<li>
+						<div class="overlay2">
+							<img class="" src="../welcomenew/images/slider/bg1.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                            <h2 class="animated7">
+	                                Sécurisation des données
+	                            </h2>
+	                            <h3 class="animated8">
+	                            	Nos techniciens sont sensibilisés aux respect de la vie privée des clients et ne se permettront jamais de fouiller dans leurs appareils.
+	                            </h3>		
+	                            <div class="">
+	                                <a class="animated4 slider btn btn-primary btn-min-block white" href="{{ url('reparation/rep')}}" style="font-family: Times New Roman" >&nbsp;&nbsp;Demande de réparation &nbsp;&nbsp;</a>
+									
+	                            </div>     
+	                        </div>
+	                    </div>
+					</li>
+					<li>
+						<div class="overlay2">
+							<img class="" src="../welcomenew/images/slider/bg5.jpg" alt="slider">
+						</div>
+						<div class="flex-caption slider-content">
+	                        <div class="col-md-12 text-center">
+	                            <h2 class="animated7">
+	                                Satisfaction des clients 
+	                            </h2>
+	                            <h3 class="animated8">
+	                            	La réparation des appareils mobiles nécessite des soins et une précision militaire
+	                            </h3>		
+	                            <div class="">
+	                                <a class="animated4 slider btn btn-primary btn-min-block white" href="{{ url('reparation/rep')}}" style="font-family: Times New Roman" >&nbsp;&nbsp;Demande de réparation &nbsp;&nbsp;</a>
+									
+	                            </div>     
+	                        </div>
+	                    </div>
+					</li>
+				</ul>
+			</div>
+		</div><!--/ Main slider end -->    	
+    </section> <!--/ Slider end -->
+
+
+	@include('accessoire.services')
+	@include('accessoire.accessoire')
+<!-- après nos services --> 
+<!-- Portfolio start -->
+<section id="portfolio" class="portfolio portfolio-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 heading text-center">
+					<span class="icon-pentagon wow bounceIn">
+					<img src="../img/tech.png" alt="" width="25" height="25">
+					</span>
+					<h2 class="title2">Technologies
+						<span class="title-desc"></span>
+					</h2>
+                    
+				</div>
+			</div> <!-- Title row end -->
+		</div>
+	<div style="clear: both;"></div>
+	<div style="background-image: url('../img/imgreparation.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 70vh; position: relative;">
+		<div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; width: 100%; max-width: 600px; margin-left: 10px; margin-right: 10px; top: 30%; transform: translateY(-50%); left: 50%; transform: translateX(-50%); color: #ffffff; padding: 40px;" align="center">
+			<div style="font-size: 28px; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 2px; font-family: Book Antiqua;">LEADER TECHNOLOGIE</div>
+			<span style="font-size: 23px; font-family: Book Antiqua;">La réparation des appareils mobiles nécessite des soins et une précision militaire</span><br>
+			<br>
+			<br>
+            <a class="btn " href="{{ url('reparation/rep')}}" role="button" 
+                        style="
+                                color: white; 
+                                border: 1px solid white;"> 
+                            <img src="../img/iconrep1.png" width="40" height="50">
+                  <b style="font-family: Book Antiqua ; color:white;">&nbsp;&nbsp;Demande de réparation &nbsp;&nbsp;</b>
+                </a>
+		</div>
+	</div>
+</section>
+
+<!-- Fin après nos services -->
+
+<!-- Newsletter start -->
+<section id="newsletter" class="newsletter">
+		<div class="container">
+		  	<div class="row">
+				<div class="col-md-12 heading text-center">
+					<span class="icon-pentagon wow bounceIn animated"><i class="fa fa-envelope"></i></span>
+					<h2 class="title2">Subscribe With Us
+						<span class="title-desc">We Love to Work with Passion</span>
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<form action="#" method="post" id="newsletter-form" class="newsletter-form wow bounceIn" data-wow-duration=".8s">
+						<div class="form-group">
+							<input type="email" name="email" id="newsletter-form-email" class="form-control form-control-lg" placeholder="Enter your email address" autocomplete="off">
+							<button class="btn btn-primary solid">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!-- Newsletter end -->
+
+
+	<!-- Testimonial start-->
+	<section class="testimonial parallax parallax3">
+		<div class="parallax-overlay"></div>
+	  	<div class="container">
+		    <div class="row">
+			    <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
+			        <div class="item">
+			          	<div class="testimonial-thumb">
+			            	<img src="../img/busn.png" alt="business" width="20" height="20">
+			          	</div>
+			          	<div class="testimonial-content">
+				            <p class="testimonial-text">
+										Business FixMob
+				            </p>
+			            	<h3 class="name">En tant que client professionnel, <br/>
+			<span>vous bénéficiez de nombreux avantages avec Fixbus. Les téléphones intelligents et les tablettes sont presque indispensables dans la vie quotidienne en danger. Être accessible pour les clients, les fournisseurs et les employés est important pour chaque entrepreneur. FixMob répare votre appareil et votre tablette, où que vous soyez aux Pays-Bas, pour que vous puissiez être contacté à tout moment pour vos clients, fournisseurs et employés</span>
+							</h3>
+			          	</div>
+			        </div>
+					
+			        
+			        
+			    </div><!--/ Testimonial carousel end-->
+		    </div><!--/ Row end-->
+	  	</div><!--/  Container end-->
+	</section><!--/ Testimonial end-->
+
+
+	
+	
+
+	<!-- Footer start -->
+	<footer id="footer" class="footer footer2">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Photos</h3>
+
+					<div class="img-gallery">
+						<div class="img-container">
+												
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/4.jpg">
+								<img src="../welcomenew/images/gallery/4.jpg" alt="">
+							</a>
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/5.jpg">
+							<img src="../img/bus fixmob.png" alt="">
+							</a>
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/6.jpg">
+								<img src="../welcomenew/images/img2.jpg" alt="">
+							</a>
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/6.jpg">
+								<img src="../welcomenew/images/img1.jpg" alt="">
+							</a>
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/6.jpg">
+								<img src="../welcomenew/images/img3.jpg" alt="">
+							</a>
+							<a class="thumb-holder" data-rel="prettyPhoto" href="../welcomenew/images/gallery/6.jpg">
+								<img src="../welcomenew/images/protect.jpg" alt="">
+							</a>
+						</div>
+					</div>
+
+						
+				</div><!--/ end flickr -->
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Quick Links</h3>
+
+					<ul class="unstyled arrow">
+						<li><a href="#">About CraftTheme</a></li>
+						<li><a href="#">How We Help</a></li>
+						<li><a href="#">Upcoming Events</a></li>
+						<li><a href="#">Customer Support</a></li>
+						<li><a href="#">Fill a Form</a></li>
+						<li><a href="#">Latest News</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Shortcodes</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">404 Error Page</a></li>
+						<li><a href="#">Coming Soon</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+	
+				</div><!--/ End Recent Posts-->
+
+
+				<div class="col-md-3 col-sm-12 footer-widget footer-about-us">
+					<h3 class="widget-title">About Craft</h3>
+					<p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
+					<p><strong>Address: </strong>1102 Saint Marys, Junction City, KS</p>
+					<div class="row">
+						<div class="col-md-6">
+							<strong>Email: </strong>
+							<p>info@craftbd.com</p>
+						</div>
+						<div class="col-md-6">
+							<strong>Phone No.</strong>
+							<p>+(785) 238-4131</p>
+						</div>
+					</div>
+					<br/>
+					<p><a href="#" class="btn btn-primary solid square">Purchase Now <i class="fa fa-long-arrow-right"></i></a></p>
+				</div><!--/ end about us -->
+
+
+
+
+			</div><!-- Row end -->
+		</div><!-- Container end -->
+	</footer><!-- Footer end -->
+	
+
+	<!-- Footer start -->
+	<section id="copyright" class="copyright angle">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="footer-social unstyled">
+						<li>
+							<a title="Twitter" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-twitter"></i></span>
+							</a>
+							<a title="Facebook" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
+							</a>
+							<a title="Google+" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-google-plus"></i></span>
+							</a>
+							<a title="linkedin" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
+							</a>
+							<a title="Pinterest" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>
+							</a>
+							<a title="Skype" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>
+							</a>
+							<a title="Dribble" href="#">
+								<span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!--/ Row end -->
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="copyright-info">
+         			 &copy; Copyright 2019 FixMob - All Rights Reserved </a>
+        			</div>
+				</div>
+			</div><!--/ Row end -->
+		   <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+				<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+			</div>
+		</div><!--/ Container end -->
+	</section><!--/ Footer end -->
+
+	<!-- Javascript Files
+	================================================== -->
+
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="../welcomenew/js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script type="text/javascript" src="../welcomenew/js/bootstrap.min.js"></script>
+	<!-- Style Switcher -->
+	<script type="text/javascript" src="../welcomenew/js/style-switcher.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="../welcomenew/js/owl.carousel.js"></script>
+	<!-- PrettyPhoto -->
+	<script type="text/javascript" src="../welcomenew/js/jquery.prettyPhoto.js"></script>
+	<!-- Bxslider -->
+	<script type="text/javascript" src="../welcomenew/js/jquery.flexslider.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="../welcomenew/js/cd-hero.js"></script>
+	<!-- Isotope -->
+	<script type="text/javascript" src="../welcomenew/js/isotope.js"></script>
+	<script type="text/javascript" src="../welcomenew/js/ini.isotope.js"></script>
+	<!-- Wow Animation -->
+	<script type="text/javascript" src="../welcomenew/js/wow.min.js"></script>
+	<!-- SmoothScroll -->
+	<script type="text/javascript" src="../welcomenew/js/smoothscroll.js"></script>
+	<!-- Eeasing -->
+	<script type="text/javascript" src="../welcomenew/js/jquery.easing.1.3.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="../welcomenew/js/jquery.counterup.min.js"></script>
+	<!-- Waypoints -->
+	<script type="text/javascript" src="../welcomenew/js/waypoints.min.js"></script>
+	<!-- Template custom -->
+	<script type="text/javascript" src="../welcomenew/js/custom.js"></script>
+	</div><!-- Body inner end -->
+</body>
+</html>
